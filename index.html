@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POMP Animation</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/vector.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <h2>This is POMP Animation test</h2>
+        <h3>How to apply eyelash extension correctly?</h3>
+        <section>
+            <div class="animation-container">
+                <div class="slide cover is-active">
+                    <img src="/assets/animation-1.png" alt="">
+                    <button class="go-btn">GO</button>
+                </div>
+                <div class="slide module">
+                    <div class="module-nav">
+                        <div class="nav-btn prev"></div>
+                        <div class="nav-btn next is-active"></div>
+                    </div>
+                    <div class="slide slide-a is-active">
+                        <h4>Please note the correct lash extension placement</h4>
+                        <div class="slide-grid">
+                            <div class="item wrong">
+                                <img src="/assets/lash-1.svg" alt="">
+                            </div>
+                            <div class="item correct">
+                                <img src="/assets/lash-2.svg" alt="">
+                            </div>
+                            <div class="item wrong">
+                                <img src="/assets/lash-3.svg" alt="">
+                            </div>
+                            <div class="item wrong">
+                                <img src="/assets/lash-4.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-b">
+                        <h4 class="task-title"><span class="taskA">Drag</span> and <span class="taskB">Rotate</span> the lash extension to place on lashes</h4>
+                        <div class="task-container">
+                            <div class="task-item">
+                                <div class="task-item-container grid">
+                                    <button id="rotateL"><img src="/assets/rotate-l.svg" alt=""></button>
+                                    <button id="rotateR"><img src="/assets/rotate-r.svg" alt=""></button>
+                                    <div class="item task-update">
+                                        <div class="task-label" id="taskA">
+                                            <img class="task-check" src="/assets/check.svg" alt="">
+                                            <img class="task-wrong" src="/assets/wrong.svg" alt="">
+                                            <p>Rotate</p>
+                                        </div>
+                                        <div class="task-label" id="taskB">
+                                            <img class="task-check" src="/assets/check.svg" alt="">
+                                            <img class="task-wrong" src="/assets/wrong.svg" alt="">
+                                            <p>Drag</p>
+                                        </div>
+                                    </div>
+                                    <div class="item draggable">
+                                        <img src="/assets/lash-7.svg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="/assets/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-break"></div>
+                            <div class="task-item">
+                                <div class="task-item-container">
+                                    <div class="item dropzone">
+                                        <img src="/assets/lash-8.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
